@@ -166,6 +166,29 @@ button:disabled{opacity:.35}
   .columns{grid-template-columns:repeat(3,1fr)}
   .controls{display:none}
 }
+  
+/* 한글 줄바꿈 개선 */
+.item p,
+.ibody,
+.ititle {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  text-wrap: pretty;
+}
+
+/* 카드 안쪽 공간 확보 */
+.card,
+.colcard {
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+/* 본문 글자 간격 조정 */
+.item p,
+.ibody {
+  letter-spacing: -0.04em;
+}
+
 </style>
 </head>
 <body>
